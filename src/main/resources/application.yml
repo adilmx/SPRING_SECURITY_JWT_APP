@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+    hibernate:
+      ddl-auto: create
+      use-new-id-generator-mappings: false
+    database: oracle
+  datasource:
+    username: admax
+    password: admax
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+server:
+  port: '8081'
